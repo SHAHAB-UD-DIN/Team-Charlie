@@ -34,7 +34,7 @@ export default function GradeCalculator() {
     };
 
     return(
-        <div className="">
+        <div className="m-2">
             <form onSubmit={handleSubmit}>
                 <input 
                     type="number"
