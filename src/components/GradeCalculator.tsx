@@ -34,8 +34,17 @@ export default function GradeCalculator() {
     };
 
     return(
-
-        <></>
+        <div className="">
+            <form onSubmit={handleSubmit}>
+                <input 
+                    type="number"
+                    value={marks}
+                    onChange={(e)=>setMarks(e.target.value)} 
+                />
+                <button type="submit">Submit</button>
+            </form>
+            {result && <p>Grade: {result.grade}, Percentage: {result.percentage}</p>}
+        </div>
     );
 
 }
