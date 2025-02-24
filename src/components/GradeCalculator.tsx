@@ -1,5 +1,5 @@
 'use client'
-import useState from "react";
+import { useState } from "react";
 
 interface GradeResult {
     grade: string,
@@ -22,6 +22,20 @@ export default function GradeCalculator() {
         if (ObtainMarks >= 450) return { grade: "C", percentage: rounded};
         return {grade: "Failed", percentage: rounded}
     };
+
+    const handleSubmit = (e: React.FormEvent) => {
+        e.preventDefault();
+        const ObtainMarks = parseInt(marks, 10);
+        if (!isNaN(ObtainMarks) && ObtainMarks >= 0 && ObtainMarks <= 1100) {
+            setResult(calculatorGrade(ObtainMarks);)
+        }else{
+            alert("Please enter a valid number between 0 to 1100")
+        }
+    };
+
+    return(
+        
+    );
 
 }
 
