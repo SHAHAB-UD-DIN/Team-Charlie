@@ -27,7 +27,7 @@ export default function GradeCalculator() {
         e.preventDefault();
         const ObtainMarks = parseInt(marks, 10);
         if (!isNaN(ObtainMarks) && ObtainMarks >= 0 && ObtainMarks <= 1100) {
-            setResult(calculatorGrade(ObtainMarks);)
+            setResult(calculatorGrade(ObtainMarks));
         }else{
             alert("Please enter a valid number between 0 to 1100")
         }
