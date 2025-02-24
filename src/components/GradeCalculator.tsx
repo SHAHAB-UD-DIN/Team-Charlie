@@ -8,7 +8,7 @@ interface GradeResult {
 
 export default function GradeCalculator() {
     const [marks, setMarks] = useState('');
-    const [resul, setResult] = useState<GradeResult | null>(null);
+    const [result, setResult] = useState<GradeResult | null>(null);
 
     const calculatorGrade = (ObtainMarks: number): GradeResult => {
         const totalMarks = 1100;
@@ -34,7 +34,8 @@ export default function GradeCalculator() {
     };
 
     return(
-        
+
+        <></>
     );
 
 }
